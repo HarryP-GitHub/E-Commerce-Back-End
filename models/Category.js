@@ -4,6 +4,8 @@ const sequelize = require('../config/connection.js');
 
 class Category extends Model {}
 //Category model matching readme's requirements
+// id: defining the data to be an integer, cannot be null, is a primary key and will automatically increment
+// category_name: Data is a string and cannot be null
 Category.init(
   {
     id: {
