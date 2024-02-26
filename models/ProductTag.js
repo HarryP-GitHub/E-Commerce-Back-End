@@ -4,6 +4,9 @@ const sequelize = require('../config/connection');
 
 class ProductTag extends Model {}
 // Setting ProductTag model to match readme
+// id: is an integer, cannot be null, is a primary key and auto increments per new Product Tag
+// product_id: is an integer and references the id from the product model
+// tag_id: is an integer and references the id from the tag model
 ProductTag.init(
   {
     id: {

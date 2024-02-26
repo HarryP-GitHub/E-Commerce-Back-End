@@ -8,6 +8,12 @@ class Product extends Model {}
 
 // set up fields and rules for Product model
 // Setting up Product to meet readme requirements
+// Similar to category model, 
+// id: Data is an integer, cannot be null, is a primary key and automatically increments per new id
+// product_name: is a String, cannot be null
+// price: is a decimal, cannot be null and runs a validation if number is a decimal
+// stock: is an integer, cannot be null, default value 10, and a validation if number is numeric
+// category_id: is an integory and references to the id from the Category model
 Product.init(
   {
     id: {
